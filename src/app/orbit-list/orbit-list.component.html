@@ -8,7 +8,7 @@
     </tr>
     <tr class="data-row" *ngFor = "let item of satellites" >
         <td>{{item.name}}</td>
-        <td>{{item.type}}</td>
+        <td [class.warning]="item.changeColor">{{item.type}}</td>
         <td>{{item.operational}}</td>
         <td>{{item.orbitType}}</td>
         <td>{{item.launchDate}}</td>
