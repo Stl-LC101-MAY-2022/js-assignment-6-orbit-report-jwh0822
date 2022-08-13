@@ -29,3 +29,6 @@ th, td {
 .data-row:nth-child(even){
 	background-color: aqua;
 }
+.data-row:nth-child(odd){
+	background-color: goldenrod;
+}
