@@ -5,6 +5,7 @@ export class Satellite {
 	launchDate: string;
 	orbitType: string;
 	operational: boolean;
+	changeColor: boolean;
 
 	constructor(name: string, type: string, launchDate: string, orbitType: string, operational: boolean) {
 		this.name = name;
@@ -12,11 +13,16 @@ export class Satellite {
 		this.launchDate = launchDate;
 		this.orbitType = orbitType;
 		this.operational = operational;
+		this.changeColor = this.isSpaceDebris()
    }
 	
-	isSpaceDebris(): boolean {
+   isSpaceDebris(): boolean {
+	if (this.type === 'Space Debris'){
 		return true;
-   }
+	} else {
+		return false;
+		}
+}
 
 }
 
