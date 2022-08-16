@@ -26,3 +26,9 @@ th, td {
 	margin: 5px 10px;
 	padding: 6px;
 }
+.data-row:nth-child(even){
+	background-color: aqua;
+}
+.data-row:nth-child(odd){
+	background-color: goldenrod;
+}
