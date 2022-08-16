@@ -13,11 +13,11 @@ export class Satellite {
 		this.launchDate = launchDate;
 		this.orbitType = orbitType;
 		this.operational = operational;
-		this.changeColor = this.isSpaceDebris(this.type)
+		this.changeColor = this.isSpaceDebris()
    }
 	
-   isSpaceDebris(x: string): boolean {
-	if (x ==='Space Debris'){
+   isSpaceDebris(): boolean {
+	if (this.type === 'Space Debris'){
 		return true;
 	} else {
 		return false;
